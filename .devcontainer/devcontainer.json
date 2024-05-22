@@ -2,11 +2,14 @@
 	"name": "template-bun",
 	"build": {
 		"dockerfile": "../Dockerfile",
-		"context": ".."
+		"context": "..",
+		"target": "base"
+	},
+	"containerEnv": {
+		"SHELL": "/bin/bash"
 	},
 	"features": {
-		"ghcr.io/devcontainers/features/common-utils:2": {},
-		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+		"ghcr.io/devcontainers/features/common-utils:2": {}
 	},
 	"customizations": {
 		"vscode": {
