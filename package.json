@@ -1,0 +1,16 @@
+{
+	"name": "template-bun",
+	"scripts": {
+		"format": "biome format .",
+		"lint": "biome lint .",
+		"check": "biome check ."
+	},
+	"workspaces": ["packages/*"],
+	"devDependencies": {
+		"@biomejs/biome": "1.7.3",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	}
+}

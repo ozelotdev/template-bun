@@ -1,0 +1,27 @@
+{
+	"name": "template-bun",
+	"build": {
+		"dockerfile": "../Dockerfile",
+		"context": ".."
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {},
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				// Container
+				"ms-azuretools.vscode-docker",
+				// Runtime
+				"oven.bun-vscode",
+				// Formatter
+				"biomejs.biome",
+				"EditorConfig.EditorConfig"
+			],
+			"settings": {
+				"editor.formatOnSave": true
+			}
+		}
+	}
+}
