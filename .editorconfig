@@ -11,3 +11,6 @@ trim_trailing_whitespace = true
 
 [*.{md,mdx}]
 trim_trailing_whitespace = false
+
+[compose.yaml]
+indent_style = space
