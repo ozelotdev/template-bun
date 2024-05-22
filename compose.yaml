@@ -1,0 +1,15 @@
+services:
+
+  frontend:
+    build:
+      dockerfile: Dockerfile
+      target: frontend_prod
+    ports:
+      - 8080:8080
+
+  backend:
+    build:
+      dockerfile: Dockerfile
+      target: backend_prod
+    ports:
+      - 3000:3000
